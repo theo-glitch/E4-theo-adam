@@ -8,12 +8,13 @@ class Manager_User{
 
   private $_nom;
   private $_prenom;
+  private $_classe
   private $_email;
   private $_mdp;
 
 //Inscription dans la bdd
   public function envoiebdd(User $inscription){
-    $bdd = new PDO('mysql:host=localhost;dbname=cinema','root','');
+    $bdd = new PDO('mysql:host=localhost;dbname=e4','root','');
     $req = $bdd->prepare('SELECT * FROM compte WHERE email = :email');
     $req->execute(array('email'=>$inscription->getEmail()));
     $donnee = $req->fetch();
