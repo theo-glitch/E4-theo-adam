@@ -46,7 +46,7 @@
 		<div class="modal-content">
 			<div class="modal-header tit-up">
 				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-				<h4 class="modal-title">Customer Login</h4>
+				<h4 class="modal-title">Connexion étudiant</h4>
 			</div>
 			<div class="modal-body customer-box">
 				<!-- Nav tabs -->
@@ -57,22 +57,21 @@
 				<!-- Tab panes -->
 				<div class="tab-content">
 					<div class="tab-pane active" id="Login">
+            <form method="POST" action="../traitement/cible_connexion.php" class="signup-form"
 						<form role="form" class="form-horizontal">
 							<div class="form-group">
 								<div class="col-sm-12">
-									<input class="form-control" id="email1" placeholder="Name" type="text">
+									<input type="text" class="form-control"  name="email"  placeholder="email" type="text">
 								</div>
 							</div>
 							<div class="form-group">
 								<div class="col-sm-12">
-									<input class="form-control" id="exampleInputPassword1" placeholder="Email" type="email">
+									<input type="password" class="form-control" name="mdp" placeholder="mot de passe" type="email">
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-sm-10">
-									<button type="submit" class="btn btn-light btn-radius btn-brd grd1">
-										Submit
-									</button>
+									  <input type="submit" name="submit" class="form-submit submit" value="Valider"/>
 									<a class="for-pwd" href="javascript:;">Forgot your password?</a>
 								</div>
 							</div>
@@ -82,31 +81,31 @@
 						<form role="form" class="form-horizontal">
 							<div class="form-group">
 								<div class="col-sm-12">
-									<input class="form-control" placeholder="Name" type="text">
+									<input class="form-control" placeholder="Nom" type="text">
 								</div>
 							</div>
 							<div class="form-group">
 								<div class="col-sm-12">
-									<input class="form-control" id="email" placeholder="Email" type="email">
+									<input class="form-control" id="Prenom" placeholder="Prenom" type="email">
 								</div>
 							</div>
 							<div class="form-group">
 								<div class="col-sm-12">
-									<input class="form-control" id="mobile" placeholder="Mobile" type="email">
+									<input class="form-control" id="email" placeholder="Mail" type="email">
 								</div>
 							</div>
 							<div class="form-group">
 								<div class="col-sm-12">
-									<input class="form-control" id="password" placeholder="Password" type="password">
+									<input class="form-control" id="mpd" placeholder="Mot de passe" type="password">
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-sm-10">
 									<button type="button" class="btn btn-light btn-radius btn-brd grd1">
-										Save &amp; Continue
+										Valider
 									</button>
 									<button type="button" class="btn btn-light btn-radius btn-brd grd1">
-										Cancel</button>
+										Annuler</button>
 								</div>
 							</div>
 						</form>
@@ -217,7 +216,7 @@
 					</div>
 				</div><!-- end section -->
 			</div>
-			
+
 			<!-- Left Control -->
 			<a class="new-effect carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
 				<span class="fa fa-angle-left" aria-hidden="true"></span>
