@@ -147,7 +147,6 @@
 								<div class="col-md-12 col-sm-12 text-right">
 									<div class="big-tagline">
 										<h2><strong>Lycée  </strong> Robert Schuman</h2>
-										<p class="lead">With Landigoo responsive landing page template, you can promote your all hosting, domain and mail services. </p>
 											<a href="#" class="hover-btn-new"><span>Contact Us</span></a>
 											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 											<a href="#" class="hover-btn-new"><span>Read More</span></a>
@@ -248,20 +247,20 @@
 			<div class="row text-left stat-wrap">
 				<div class="col-md-4 col-sm-4 col-xs-12">
 					<span data-scroll class="global-radius icon_wrap effect-1 alignleft"><i class="flaticon-study"></i></span>
-					<p class="stat_count">12000</p>
-					<h3>Students</h3>
+					<p class="stat_count">800</p>
+					<h3>Elèves</h3>
 				</div><!-- end col -->
 
 				<div class="col-md-4 col-sm-4 col-xs-12">
 					<span data-scroll class="global-radius icon_wrap effect-1 alignleft"><i class="flaticon-online"></i></span>
-					<p class="stat_count">240</p>
-					<h3>Courses</h3>
+					<p class="stat_count">35</p>
+					<h3>Cours</h3>
 				</div><!-- end col -->
 
 				<div class="col-md-4 col-sm-4 col-xs-12">
 					<span data-scroll class="global-radius icon_wrap effect-1 alignleft"><i class="flaticon-years"></i></span>
 					<p class="stat_count">55</p>
-					<h3>Years Completed</h3>
+					<h3>Années Complétés</h3>
 				</div><!-- end col -->
 			</div><!-- end row -->
 		</div><!-- end container -->
@@ -302,15 +301,18 @@
                         <div class="widget-title">
                             <h3>About US</h3>
                         </div>
-                        <p> Integer rutrum ligula eu dignissim laoreet. Pellentesque venenatis nibh sed tellus faucibus bibendum. Sed fermentum est vitae rhoncus molestie. Cum sociis natoque penatibus et magnis dis montes.</p>
+                        <p> Enseignement catholique sous contrat d'association avec l'Etat<br />
+Etablissement habilité à percevoir la taxe d'apprentissage</p>
+5 avenue du Général de Gaulle - 93440 Dugny<br />
+<div>
+<span class="iconlist-char" data-av_iconfont="entypo-fontello" data-av_icon="" aria-hidden="true"></span> 01 48 37 74 26<span class="iconlist-char" data-av_iconfont="entypo-fontello" data-av_icon="" aria-hidden="true" style="margin-left: 20px"></span> 01 48 35 48 14<br />
+<span class="iconlist-char" data-av_iconfont="entypo-fontello" data-av_icon="" aria-hidden="true"></span> administration@lyceerobertschuman.com</p>
+</div>
+
+
+
 						<div class="footer-right">
-							<ul class="footer-links-soi">
-								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="#"><i class="fa fa-github"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-								<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-								<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-							</ul><!-- end links -->
+
 						</div>
                     </div><!-- end clearfix -->
                 </div><!-- end col -->
@@ -318,14 +320,14 @@
 				<div class="col-lg-4 col-md-4 col-xs-12">
                     <div class="widget clearfix">
                         <div class="widget-title">
-                            <h3>Information Link</h3>
+                            <h3>LIENS RAPIDES</h3>
                         </div>
                         <ul class="footer-links">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Pricing</a></li>
-							<li><a href="#">About</a></li>
-							<li><a href="#">Contact</a></li>
+                            <li><a href="http://www.lyceerobertschuman.com/contact/">Contact</a></li>
+                            <li><a href="http://www.lyceerobertschuman.com/acces/">Accès</a></li>
+                            <li><a href="https://0931573e.index-education.net/pronote">Espace Pronote</a></li>
+							<li><a href="https://youtu.be/5fQu2KygRL0">Vidéo Etablissement</a></li>
+							<li><a href="https://www.facebook.com/robertschumandugny">Facebook</a></li>
                         </ul><!-- end links -->
                     </div><!-- end clearfix -->
                 </div><!-- end col -->
@@ -333,15 +335,15 @@
                 <div class="col-lg-4 col-md-4 col-xs-12">
                     <div class="widget clearfix">
                         <div class="widget-title">
-                            <h3>Contact Details</h3>
+                            <h3>Accès</h3>
                         </div>
 
-                        <ul class="footer-links">
-                            <li><a href="mailto:#">info@yoursite.com</a></li>
-                            <li><a href="#">www.yoursite.com</a></li>
-                            <li>PO Box 16122 Collins Street West Victoria 8007 Australia</li>
-                            <li>+61 3 8376 6284</li>
-                        </ul><!-- end links -->
+                      <div>
+                        <div class="textwidget">RER B (Le Bourget) et Bus 133 (Albert Chardavoine)
+RER B (La Courneuve) et Bus 249 (Albert Chardavoine)
+Tramway T11:   arrêt Dugny-La Courneuve</div>
+		<span class="seperator extralight-border"></span></section></div>
+                      </div>
                     </div><!-- end clearfix -->
                 </div><!-- end col -->
 
@@ -353,7 +355,7 @@
         <div class="container">
             <div class="footer-distributed">
                 <div class="footer-center">
-                    <p class="footer-company-name">All Rights Reserved. &copy; 2018 <a href="#">SmartEDU</a> Design By : <a href="https://html.design/">html design</a></p>
+                    <p class="footer-company-name">Tout droit réserver. &copy; 2020 </p>
                 </div>
             </div>
         </div><!-- end container -->

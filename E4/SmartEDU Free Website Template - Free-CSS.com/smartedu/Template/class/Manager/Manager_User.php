@@ -42,7 +42,7 @@ class Manager_User{
       if ($donnee['role'] == "admin"){
         $_SESSION['role'] = $donnee['role'];
       }
-      header('location: ../index.php');
+      header('location: ../blog.html');
     }
     else{
       $_SESSION['erreur_co'] = true;
