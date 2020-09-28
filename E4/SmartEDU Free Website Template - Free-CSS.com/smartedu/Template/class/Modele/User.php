@@ -2,9 +2,9 @@
 //Modèle
 class User{
 
-  private $_Nom;
-  private $_Prenom;
-  private $_mail;
+  private $_nom;
+  private $_prenom;
+  private $_email;
   private $_mdp;
 
   public function __construct(array $donnees){
@@ -23,22 +23,22 @@ class User{
   }
 
   //setter
-  public function setNom($Nom){
-    $this->_Nom = $Nom;
+  public function setNom($nom){
+    $this->_nom = $nom;
   }
-  public function setPrenom($Prenom){
-    $this->_Prenom = $Prenom;
+  public function setPrenom($prenom){
+    $this->_prenom = $prenom;
   }
-  public function setmail($mail){
-    $this->_mail = $mail;
+  public function setEmail($email){
+    $this->_email = $email;
   }
   public function setMdp($mdp){
     $this->_mdp = $mdp;
   }
   //getter
-  public function getNom(){return $this->_Nom;}
-  public function getPrenom(){return $this->_Prenom;}
-  public function getmail(){return $this->_mail;}
+  public function getNom(){return $this->_nom;}
+  public function getPrenom(){return $this->_prenom;}
+  public function getEmail(){return $this->_email;}
   public function getMdp(){return $this->_mdp;}
 }
 ?>
