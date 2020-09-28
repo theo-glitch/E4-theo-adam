@@ -8,7 +8,6 @@ class Manager_User{
 
   private $_nom;
   private $_prenom;
-  private $_classe
   private $_email;
   private $_mdp;
 
@@ -29,37 +28,6 @@ class Manager_User{
       header('Location: ../view/confirm_inscription.php');
     }
   }
-      //Envoie de mail
-      /*require '../vendor/PHPMailer/PHPMailer/src/Exception.php';
-      require '../vendor/PHPMailer/PHPMailer/src/PHPMailer.php';
-      require '../vendor/PHPMailer/PHPMailer/src/SMTP.php';
-
-      $mail = new PHPMailer(); // fondation d'un nouvel objet
-      $mail->CharSet = 'UTF-8';
-      $mail->IsSMTP(); // activer SMTP
-      $mail->SMTPDebug = 1; // debugging: 1 = errors and messages, 2 = messages only
-      $mail->SMTPAuth = true; // authentication activée
-      $mail->SMTPSecure = 'ssl'; // transfer sécurisé activé et néscéssaire notement pour gmail
-      $mail->Host = "smtp.gmail.com";
-      $mail->Port = 465; // or 587
-      $mail->IsHTML(true);
-      $mail->Username = "quentin.lignani.schuman@gmail.com";
-      $mail->Password = "Admwb2000";
-      $mail->SetFrom($inscription->getEmail());
-      $mail->Subject = "[ Création de compte réussi";
-      $mail->Body = "<center><b>Cinema</b><br><p>Bonjour ! Votre compte a été créé.</p></center></html>";
-      $mail->AddAddress($inscription->getMail());
-      if(!$mail->Send())
-      {
-         echo "Mailer Error: " . $mail->ErrorInfo;
-      }
-      else {
-         echo "Message has been sent";
-      }
-
-      header('location: ../view/connexion.php');
-    }
-  }*/
 
   //Connexion
   public function connexion(User $connexion){

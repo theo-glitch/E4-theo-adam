@@ -4,7 +4,8 @@ class User{
 
   private $_nom;
   private $_prenom;
-  private $_classe
+
+  
   private $_email;
   private $_mdp;
 
@@ -30,9 +31,6 @@ class User{
   public function setPrenom($prenom){
     $this->_prenom = $prenom;
   }
-  public function setClasse($classe){
-    $this->_classe = $classe;
-  }+
   public function setEmail($email){
     $this->_email = $email;
   }

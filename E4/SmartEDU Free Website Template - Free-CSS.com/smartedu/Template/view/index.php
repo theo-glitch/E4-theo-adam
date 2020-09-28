@@ -40,74 +40,7 @@
 </head>
 <body class="host_version">
 
-	<!-- Modal -->
-	<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-	  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-		<div class="modal-content">
-			<div class="modal-header tit-up">
-				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-				<h4 class="modal-title">Connexion étudiant</h4>
-			</div>
-			<div class="modal-body customer-box">
-				<!-- Nav tabs -->
-				<ul class="nav nav-tabs">
-					<li><a class="active" href="#Login" data-toggle="tab">Login</a></li>
-					<li><a href="#Registration" data-toggle="tab">Registration</a></li>
-				</ul>
-				<!-- Tab panes -->
-				<div class="tab-content">
-					<div class="tab-pane active" id="Login">
-            <form method="POST" action="../traitement/cible_connexion.php" class="signup-form"
-						<form role="form" class="form-horizontal">
-							<div class="form-group">
-								<div class="col-sm-12">
-									<input type="text" class="form-control"  name="email"  placeholder="email" type="text">
-								</div>
-							</div>
-							<div class="form-group">
-								<div class="col-sm-12">
-									<input type="password" class="form-control" name="mdp" placeholder="mot de passe" type="email">
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-sm-10">
-									  <input type="submit" name="submit" class="form-submit submit" value="Valider"/>
-									<a class="for-pwd" href="javascript:;">Forgot your password?</a>
-								</div>
-							</div>
-						</form>
-					</div>
-					<div class="tab-pane" id="Registration">
-						<form role="form" class="form-horizontal">
-							<div class="form-group">
-								<div class="col-sm-12">
-									<input class="form-control" placeholder="Nom" type="text">
-								</div>
-							</div>
-							<div class="form-group">
-								<div class="col-sm-12">
-									<input class="form-control" id="Prenom" placeholder="Prenom" type="email">
-								</div>
-							</div>
-							<div class="form-group">
-								<div class="col-sm-12">
-									<input class="form-control" id="email" placeholder="Mail" type="email">
-								</div>
-							</div>
-							<div class="form-group">
-								<div class="col-sm-12">
-									<input class="form-control" id="mpd" placeholder="Mot de passe" type="password">
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-sm-10">
-									<button type="button" class="btn btn-light btn-radius btn-brd grd1">
-										Valider
-									</button>
-									<button type="button" class="btn btn-light btn-radius btn-brd grd1">
-										Annuler</button>
-								</div>
-							</div>
+
 						</form>
 					</div>
 				</div>
@@ -161,9 +94,37 @@
 						<li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
 						<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
 					</ul>
-					<ul class="nav navbar-nav navbar-right">
-                        <li><a class="hover-btn-new log orange" href="#" data-toggle="modal" data-target="#login"><span>Connexion</span></a></li>
-                    </ul>
+          <div id="header">
+    					<div class="row-1" "col-md-12">
+    						<br>
+    						<div><?php
+    									//Connexion ou connecté
+    									if(isset($_SESSION['nom'])){
+    									echo "Bienvenue ".$_SESSION['nom'];
+    								}
+    								else{
+    									echo '<a href="view/form_inscription.php" class="myButton">Inscription</a>
+    												<a href="view/form_connexion.php" class="myButton">Connexion</a>';
+    								}
+    								?><br></div>
+    						</div>
+
+    						<?php
+    							//affichage des boutons si connecté ou non
+    							if(isset($_SESSION['nom']) && !isset($_SESSION['role'])){
+    								echo '<li class="last"><a href="view/mon_compte.php">Mon compte</a></li>';
+    							}
+    							else if(isset($_SESSION['nom']) && isset($_SESSION['role'])){
+    								echo '<li class="last"><a href="view/gestion_admin.php">Gestion Admin</a></li>';
+    							}
+    							if(isset($_SESSION['nom'])){
+    								echo '<li class="last"><a href="traitement/deconnexion.php">Deconnexion</a></li>';
+    							}
+    						?>
+
+    					</ul>
+    				</div>
+    			</div>
 				</div>
 			</div>
 		</nav>
