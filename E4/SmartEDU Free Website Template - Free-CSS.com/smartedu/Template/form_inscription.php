@@ -1,19 +1,10 @@
-<?php
-session_start();
-if(isset($_SESSION['erreur_co'])){
-  echo '<script>
-  alert("Mauvais email ou mot de passe.");
-  </script>';
-  unset($_SESSION['erreur_co']);
-}
- ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Connexion</title>
+    <title>Inscription</title>
 
     <!-- Font Icon -->
     <link rel="stylesheet" href="../lib/fonts/material-icon/css/material-design-iconic-font.min.css">
@@ -27,22 +18,31 @@ if(isset($_SESSION['erreur_co'])){
 
         <div class="container">
             <div class="signup-content">
-                <form method="POST" action="../traitement/cible_connexion.php" class="signup-form">
-                    <h2>Connexion</h2>
-                    <br><br>
+
+                <form method="POST" action="traitement/cible_inscription.php" class="signup-form">
+                  <br>
+                    <h2>Inscription</h2>
+
                     <div class="form-group">
-                        <input type="text" class="form-input" name="email"  placeholder="Email"/>
+                        <input type="text" class="form-input" name="nom"  placeholder="Nom"/>
                     </div>
-                    <br>
+                    <div class="form-group">
+                        <input type="text" class="form-input" name="prenom"  placeholder="Prenom"/>
+                    </div>
+                    <div class="form-group">
+                        <input type="mail" class="form-input" name="mail"  placeholder ="mail"/>
+                    </div>
                     <div class="form-group">
                         <input type="password" class="form-input" name="mdp"  placeholder="Mot de passe"/>
                     </div>
-                    <br><br>
                     <div class="form-group">
-                        <input type="submit" name="submit" class="form-submit submit" value="Valider"/>
-                        <a href="form_inscription.php" class="submit-link submit">Inscription</a>
+                        <input type="password" class="form-input" name="confirmmdp"  placeholder="Retaper votre mot de passe"/>
                     </div>
-                    <br><br>
+
+                    <div class="form-group">
+                        <input type="submit" name="submit" class="form-submit submit" value="S'inscrire"/>
+                        <a href="form_connexion.php" class="submit-link submit">Connexion</a>
+                    </div>
                 </form>
             </div>
         </div>
@@ -54,12 +54,3 @@ if(isset($_SESSION['erreur_co'])){
     <script src="../lib/js/main.js"></script>
 </body>
 </html>
-<?php
-  if(isset($_GET['reserv'])){
-    echo '<script>
-    alert("Veuillez vous connecter pour faire une réservation.");
-    window.location.href="form_connexion.php";
-    </script>';
-    unset($_SESSION['erreur_co']);
-  }
-?>

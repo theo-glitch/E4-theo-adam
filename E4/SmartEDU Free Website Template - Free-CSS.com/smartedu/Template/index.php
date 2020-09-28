@@ -103,8 +103,8 @@
     									echo "Bienvenue ".$_SESSION['nom'];
     								}
     								else{
-    									echo '<a href="view/form_inscription.php" class="myButton">Inscription</a>
-    												<a href="view/form_connexion.php" class="myButton">Connexion</a>';
+    									echo '<a href="form_inscription.php" class="myButton">Inscription</a>
+    												<a href="form_connexion.php" class="myButton">Connexion</a>';
     								}
     								?><br></div>
     						</div>
@@ -147,7 +147,7 @@
 								<div class="col-md-12 col-sm-12 text-right">
 									<div class="big-tagline">
 										<h2><strong>Lycée  </strong> Robert Schuman</h2>
-										<p class="lead">With Landigoo responsive landing page template, you can promote your all hosting, domain and email services. </p>
+										<p class="lead">With Landigoo responsive landing page template, you can promote your all hosting, domain and mail services. </p>
 											<a href="#" class="hover-btn-new"><span>Contact Us</span></a>
 											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 											<a href="#" class="hover-btn-new"><span>Read More</span></a>
@@ -166,7 +166,7 @@
 								<div class="col-md-12 col-sm-12 text-left">
 									<div class="big-tagline">
 										<h2 data-animation="animated zoomInRight">Lycée <strong>Robert Schuman</strong></h2>
-										<p class="lead" data-animation="animated fadeInLeft">With Landigoo responsive landing page template, you can promote your all hosting, domain and email services. </p>
+										<p class="lead" data-animation="animated fadeInLeft">With Landigoo responsive landing page template, you can promote your all hosting, domain and mail services. </p>
 											<a href="#" class="hover-btn-new"><span>Contact Us</span></a>
 											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 											<a href="#" class="hover-btn-new"><span>Read More</span></a>
