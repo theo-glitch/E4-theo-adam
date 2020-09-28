@@ -2,7 +2,7 @@
 session_start();
 if(isset($_SESSION['erreur_co'])){
   echo '<script>
-  alert("Mauvais mail ou mot de passe.");
+  alert("Mauvais email ou mot de passe.");
   </script>';
   unset($_SESSION['erreur_co']);
 }
@@ -31,7 +31,7 @@ if(isset($_SESSION['erreur_co'])){
                     <h2>Connexion</h2>
                     <br><br>
                     <div class="form-group">
-                        <input type="text" class="form-input" name="mail"  placeholder="mail"/>
+                        <input type="text" class="form-input" name="email"  placeholder="Email"/>
                     </div>
                     <br>
                     <div class="form-group">

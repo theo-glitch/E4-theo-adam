@@ -109,7 +109,7 @@
     								?><br></div>
     						</div>
 
-    						<?php
+                <?php
     							//affichage des boutons si connecté ou non
     							if(isset($_SESSION['nom']) && !isset($_SESSION['role'])){
     								echo '<li class="last"><a href="view/mon_compte.php">Mon compte</a></li>';
