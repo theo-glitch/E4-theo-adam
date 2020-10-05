@@ -41,6 +41,8 @@ if(isset($_SESSION['erreur_co'])){
                     <div class="form-group">
                         <input type="submit" name="submit" class="form-submit submit" value="Valider"/>
                         <a href="form_inscription.php" class="submit-link submit">Inscription</a>
+                        <br><br>
+                        <a href="reinitialisation.php" class="submit-link submit">mot de passe oublié ?</a>
                     </div>
                     <br><br>
                 </form>
