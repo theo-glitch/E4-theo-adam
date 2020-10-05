@@ -29,7 +29,7 @@
                     </div>
                     <div class="form-group">
                         <input type="submit" name="submit" class="form-submit submit" value="confirmer"/>
-                        <a href="form_connexion.php" class="submit-link submit">Connexion</a>
+                        <a href="form_connexion.php" class="submit-link submit">Confirmer</a>
                     </div>
                 </form>
             </div>
