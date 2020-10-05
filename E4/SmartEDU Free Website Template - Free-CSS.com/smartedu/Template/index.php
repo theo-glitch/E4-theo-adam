@@ -91,7 +91,7 @@
 							</div>
 						</li>
 						<li class="nav-item"><a class="nav-link" href="teachers.html">Teachers</a></li>
-						<li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+
 						<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
 					</ul>
           <div id="header">
@@ -117,13 +117,13 @@
     							if(isset($_SESSION['nom']) && !isset($_SESSION['role'])){
     								echo '	<ul class="navbar-nav ml-auto">
             						<li class="nav-item active"><a class="nav-link" href="about.html">Mon Profil</a></li>
-                        </ul>';
+                        ';
     							}
     						else if(isset($_SESSION['nom']) && isset($_SESSION['role'])){
     								echo '<li class="last"><a href="view/gestion_admin.php">Gestion Admin</a></li>';
     							}
     							if(isset($_SESSION['nom'])){
-    								echo '<ul class="navbar-nav ml-auto">
+    								echo '
             						<li class="nav-item active"><a class="nav-link" href="traitement/deconnexion.php">Deconnexion</a></li>
                         </ul>';}
     						?>
@@ -210,10 +210,7 @@
                     <div class="message-box">
                         <h4>2018 BEST SmartEDU education school</h4>
                         <h2>Welcome to SmartEDU education school</h2>
-                        <p>Quisque eget nisl id nulla sagittis auctor quis id. Aliquam quis vehicula enim, non aliquam risus. Sed a tellus quis mi rhoncus dignissim.</p>
-
-                        <p> Integer rutrum ligula eu dignissim laoreet. Pellentesque venenatis nibh sed tellus faucibus bibendum. Sed fermentum est vitae rhoncus molestie. Cum sociis natoque penatibus et magnis montes, nascetur ridiculus mus. Sed vitae rutrum neque. </p>
-
+                        <p>L’établissement a été créé en 1920 par quelques ingénieurs centraliens chrétiens qui fondèrent une association pour alphabétiser des jeunes gens en difficultés : c’était la naissance de « l’Entraide Éducative ». Plus tard, s’ajouteront différentes formations professionnelles pour devenir le Lycée privé Robert Schuman (Sous contrat d’association avec l’État).</p>
                         <a href="#" class="hover-btn-new orange"><span>Learn More</span></a>
                     </div><!-- end messagebox -->
                 </div><!-- end col -->
