@@ -63,7 +63,7 @@
 	<header class="top-navbar">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="index.html">
+				<a class="navbar-brand" href="index.php">
 					<img src="images/logo.png" alt="" />
 				</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
@@ -73,7 +73,7 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbars-host">
 					<ul class="navbar-nav ml-auto">
-						<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+						<li class="nav-item active"><a class="nav-link" href="index.php">Home</a></li>
 						<li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Course </a>
@@ -97,14 +97,17 @@
           <div id="header">
     					<div class="row-1" "col-md-12">
     						<br>
-    						<div><?php
+    						<div>
+<ul class="nav navbar-nav navbar-right">
+                  <?php
+                  session_start();
     									//Connexion ou connecté
     									if(isset($_SESSION['nom'])){
     									echo "Bienvenue ".$_SESSION['nom'];
     								}
     								else{
-    									echo '<a href="form_inscription.php" class="myButton">Inscription</a>
-    												<a href="form_connexion.php" class="myButton">Connexion</a>';
+    									echo '<a class="hover-btn-new log" href="form_inscription.php" >Inscription</a>
+    												<a class="hover-btn-new log" href="form_connexion.php" >Connexion</a>';
     								}
     								?><br></div>
     						</div>
@@ -112,16 +115,18 @@
                 <?php
     							//affichage des boutons si connecté ou non
     							if(isset($_SESSION['nom']) && !isset($_SESSION['role'])){
-    								echo '<li class="last"><a href="view/mon_compte.php">Mon compte</a></li>';
+    								echo '	<ul class="navbar-nav ml-auto">
+            						<li class="nav-item active"><a class="nav-link" href="about.html">Mon Profil</a></li>
+                        </ul>';
     							}
-    							else if(isset($_SESSION['nom']) && isset($_SESSION['role'])){
+    						else if(isset($_SESSION['nom']) && isset($_SESSION['role'])){
     								echo '<li class="last"><a href="view/gestion_admin.php">Gestion Admin</a></li>';
     							}
     							if(isset($_SESSION['nom'])){
-    								echo '<li class="last"><a href="traitement/deconnexion.php">Deconnexion</a></li>';
-    							}
+    								echo '<ul class="navbar-nav ml-auto">
+            						<li class="nav-item active"><a class="nav-link" href="traitement/deconnexion.php">Deconnexion</a></li>
+                        </ul>';}
     						?>
-
     					</ul>
     				</div>
     			</div>
@@ -165,7 +170,7 @@
 								<div class="col-md-12 col-sm-12 text-left">
 									<div class="big-tagline">
 										<h2 data-animation="animated zoomInRight">Lycée <strong>Robert Schuman</strong></h2>
-										<p class="lead" data-animation="animated fadeInLeft">With Landigoo responsive landing page template, you can promote your all hosting, domain and mail services. </p>
+										<p class="lead" data-animation="animated fadeInLeft"></p>
 											<a href="#" class="hover-btn-new"><span>Contact Us</span></a>
 											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 											<a href="#" class="hover-btn-new"><span>Read More</span></a>
@@ -195,8 +200,8 @@
         <div class="container">
             <div class="section-title row text-center">
                 <div class="col-md-8 offset-md-2">
-                    <h3>About</h3>
-                    <p class="lead">Lorem Ipsum dolroin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem!</p>
+                    <h3>A propos</h3>
+                    <p class="lead">Lycée privée Robert Schuman localisé à Dugny</p>
                 </div>
             </div><!-- end title -->
 
@@ -237,7 +242,7 @@
                     </div><!-- end messagebox -->
                 </div><!-- end col -->
 
-            </div><!-- end row -->
+             </div><!-- end row -->
         </div><!-- end container -->
     </div><!-- end section -->
 
@@ -253,8 +258,8 @@
 
 				<div class="col-md-4 col-sm-4 col-xs-12">
 					<span data-scroll class="global-radius icon_wrap effect-1 alignleft"><i class="flaticon-online"></i></span>
-					<p class="stat_count">35</p>
-					<h3>Cours</h3>
+					<p class="stat_count">9</p>
+					<h3>Formations</h3>
 				</div><!-- end col -->
 
 				<div class="col-md-4 col-sm-4 col-xs-12">

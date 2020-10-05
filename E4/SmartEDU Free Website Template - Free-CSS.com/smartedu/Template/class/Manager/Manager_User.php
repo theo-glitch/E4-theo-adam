@@ -42,7 +42,7 @@ class Manager_User{
       if ($donnee['role'] == "admin"){
         $_SESSION['role'] = $donnee['role'];
       }
-      header('location: ../blog.html');
+      header('location: ../index.php');
     }
     else{
       $_SESSION['erreur_co'] = true;
@@ -73,12 +73,7 @@ class Manager_User{
     $_SESSION['nom'] = $donnee['nom'];
   }
 
-  //reservation dans la bdd
-  public function reservation($email, $nom, $date, $heure, $nb_pers, $film){
-    $bdd = new PDO('mysql:host=localhost;dbname=ecole','root','');
-    $req = $bdd->prepare('INSERT into reservation (email, nom, nb_pers, film, date, heure) value(?,?,?,?,?,?)');
-    $req -> execute(array($email, $nom, $nb_pers, $film, $date, $heure));
-  }
+
 
   //inscription d'un compte admin
   public function inscrip_admin(User $inscription){
