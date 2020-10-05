@@ -28,7 +28,7 @@
 <br>
 <br>
 						<center><button class="login100-form-btn" >
-							<a href="formulaire_connexion_etudiant.php"> Connexion</a>
+							<a href="form_connexion.php"> Connexion</a>
 						</button></center> <!--On met un bouton dans lequel on met un lien qui retourne vers la page de connexion -->
 			<br>
 			<br>
