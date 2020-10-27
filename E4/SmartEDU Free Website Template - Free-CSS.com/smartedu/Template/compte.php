@@ -48,33 +48,31 @@ else{
                       </form>
                       </br>
                       </br>
-                        <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Edit Profile"/>
+                        <form id="contacts-form" action="traitement/cible_modif.php" method="POST">
+                      <button class="link2">
+                        <span>
+                          <span>Modifier</span>
+                        </span>
+                      </button>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-4">
 
                     </div>
-                    <div class="col-md-8">
-                        <div class="tab-content profile-tab" id="myTabContent">
-                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div id="content">
 
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <label>Nom</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="field"><?php echo $donnee['nom']?> </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <label>Prenom</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="field"><?php echo $donnee['prenom']?> </div>
-                                            </div>
-                                        </div>
+              							<div class="inner">
+
+                    						<fieldset>
+                    						<div class="field"><label>Votre nom:</label><input type="text" name="nom" value=<?php echo $donnee['nom']?> required/></div>
+                    						<div class="field"><label>Votre prenom:</label><input type="text" name="prenom" value=<?php echo $donnee['prenom']?> required/></div>
+                    						<div class="wrapper">
+
+                    						</div>
+                    						</fieldset>
+                    					</form>
+              							</div>
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <label>Email</label>

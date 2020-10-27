@@ -73,7 +73,6 @@
 				</button>
         <div class="collapse navbar-collapse" id="navbars-host">
 					<ul class="navbar-nav ml-auto">
-						<li class="nav-item active"><a class="nav-link" href="index.html">Accueil</a></li>
 						<li class="nav-item"><a class="nav-link" href="about.html">A propos</a></li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">filieres </a>
