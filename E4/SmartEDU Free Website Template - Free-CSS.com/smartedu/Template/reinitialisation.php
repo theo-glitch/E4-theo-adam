@@ -7,13 +7,13 @@
 	<!--On importe les bibliothèques de bootsrap néscéssaires au design dans le vendor, on importe les feuilles css...-->
 </head>
 <body>
-
+<form method="POST" action="traitement/mdp_oublie.php" class="mdp_oublie"
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
-					<span class="login100-form-title-1">
-						Vous recevrez un mail avec votre mot de passe de secours dans quelques instant
-					</span>
+				<div class="form-group">
+						<input type="text" class="form-input" name="email"  placeholder="Email"/>
+				</div>
 				</div>
 
 
@@ -36,6 +36,7 @@
 			</div>
 		</div>
 	</div>
+</form>
 <!--===============================================================================================-->
 	<script src="../vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->

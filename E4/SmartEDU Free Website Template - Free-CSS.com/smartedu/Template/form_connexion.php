@@ -42,7 +42,7 @@ if(isset($_SESSION['erreur_co'])){
                         <input type="submit" name="submit" class="form-submit submit" value="Valider"/>
                         <a href="form_inscription.php" class="submit-link submit">Inscription</a>
                         <br><br>
-                        <a href="reinitialisation.php" class="submit-link submit">mot de passe oublié ?</a>
+                        <a href="../Template/reinitialisation.php" class="submit-link submit">mot de passe oublié ?</a>
                     </div>
                     <br><br>
                 </form>

@@ -35,10 +35,15 @@ class User{
   public function setMdp($mdp){
     $this->_mdp = $mdp;
   }
+  public function setMail($mail){
+    $this->_mail = $mail;
+  }
+
   //getter
   public function getNom(){return $this->_nom;}
   public function getPrenom(){return $this->_prenom;}
-  public function getEmail(){return $this->_email;}
+  public function GetMail(){return $this->_mail;}
   public function getMdp(){return $this->_mdp;}
+  public function getEmail(){return $this->_email;}
 }
 ?>
