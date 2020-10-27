@@ -117,7 +117,7 @@
     							//affichage des boutons si connecté ou non
     							if(isset($_SESSION['nom']) && !isset($_SESSION['role'])){
     								echo '	<ul class="navbar-nav ml-auto">
-            						<li class="nav-item active"><a class="nav-link" href="about.html">Mon Profil</a></li>
+            						<li class="nav-item active"><a class="nav-link" href="compte.php">Mon Profil</a></li>
                         ';
     							}
     						else if(isset($_SESSION['nom']) && isset($_SESSION['role'])){

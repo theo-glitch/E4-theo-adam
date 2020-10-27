@@ -30,7 +30,7 @@ else{
                     <div class="col-md-6">
                         <div class="profile-head">
                                     <h5>
-                                      <div class="field"><?php echo $donnee['nom']."". $donnee['prenom']?> </div>
+                                      <div class="field"><?php echo $donnee['nom']."". $donnee['prenom'];?> </div>
                                     </h5>
                                     <h6>
                                         Etudiant
@@ -43,6 +43,11 @@ else{
                         </div>
                     </div>
                     <div class="col-md-2">
+                      <form>
+                        <input type="button" value="Retour" onclick="window.location.href='index.php'" />
+                      </form>
+                      </br>
+                      </br>
                         <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Edit Profile"/>
                     </div>
                 </div>
@@ -80,18 +85,10 @@ else{
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6">
-                                                <label>telephone</label>
+                                                <label>classe</label>
                                             </div>
                                             <div class="col-md-6">
-                                                <p>123 456 7890</p>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <label>Profession</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <p>Web Developer and Designer</p>
+                                                <div class="field"> BTS SIO SLAM 2 </div>
                                             </div>
                                         </div>
                             </div>

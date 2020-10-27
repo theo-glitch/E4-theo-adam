@@ -16,10 +16,10 @@ if(isset($_SESSION['erreur_co'])){
     <title>Connexion</title>
 
     <!-- Font Icon -->
-    <link rel="stylesheet" href="../lib/fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="lib/fonts/material-icon/css/material-design-iconic-font.min.css">
 
     <!-- Main css -->
-    <link rel="stylesheet" href="../lib/css/form_style.css">
+    <link rel="stylesheet" href="lib/css/form_style.css">
 </head>
 <body>
 
@@ -52,7 +52,7 @@ if(isset($_SESSION['erreur_co'])){
     </div>
 
     <!-- JS -->
-    <script src="../lib/vendor/jquery/jquery.min.js"></script>
-    <script src="../lib/js/main.js"></script>
+    <script src="lib/vendor/jquery/jquery.min.js"></script>
+    <script src="lib/js/main.js"></script>
 </body>
 </html>
