@@ -152,9 +152,9 @@
 								<div class="col-md-12 col-sm-12 text-right">
 									<div class="big-tagline">
 										<h2><strong>Lycée  </strong> Robert Schuman</h2>
-											<a href="#" class="hover-btn-new"><span>Contact Us</span></a>
+											<a href="contact.html" class="hover-btn-new"><span>Contactez-Nous</span></a>
 											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											<a href="#" class="hover-btn-new"><span>Read More</span></a>
+											<a href="about.html" class="hover-btn-new"><span>Voir Plus</span></a>
 									</div>
 								</div>
 							</div><!-- end row -->
@@ -171,9 +171,9 @@
 									<div class="big-tagline">
 										<h2 data-animation="animated zoomInRight">Lycée <strong>Robert Schuman</strong></h2>
 										<p class="lead" data-animation="animated fadeInLeft"></p>
-											<a href="#" class="hover-btn-new"><span>Contact Us</span></a>
+											<a href="contact.html" class="hover-btn-new"><span>Contactez-Nous</span></a>
 											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											<a href="#" class="hover-btn-new"><span>Read More</span></a>
+											<a href="about.html" class="hover-btn-new"><span>Voir Plus</span></a>
 									</div>
 								</div>
 							</div><!-- end row -->
@@ -209,9 +209,8 @@
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                     <div class="message-box">
                         <h4>2018 BEST SmartEDU education school</h4>
-                        <h2>Welcome to SmartEDU education school</h2>
+                        <h2>Bievenue au lycée Robert Schuman</h2>
                         <p>L’établissement a été créé en 1920 par quelques ingénieurs centraliens chrétiens qui fondèrent une association pour alphabétiser des jeunes gens en difficultés : c’était la naissance de « l’Entraide Éducative ». Plus tard, s’ajouteront différentes formations professionnelles pour devenir le Lycée privé Robert Schuman (Sous contrat d’association avec l’État).</p>
-                        <a href="#" class="hover-btn-new orange"><span>Learn More</span></a>
                     </div><!-- end messagebox -->
                 </div><!-- end col -->
 
@@ -234,8 +233,6 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
                         <p> Integer rutrum ligula eu dignissim laoreet. Pellentesque venenatis nibh sed tellus faucibus bibendum.</p>
-
-                        <a href="#" class="hover-btn-new orange"><span>Learn More</span></a>
                     </div><!-- end messagebox -->
                 </div><!-- end col -->
 
@@ -269,32 +266,6 @@
 	</div><!-- end section -->
 
 
-
-    <div class="parallax section dbcolor">
-        <div class="container">
-            <div class="row logos">
-                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-                    <a href="#"><img src="images/logo_01.png" alt="" class="img-repsonsive"></a>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-                    <a href="#"><img src="images/logo_02.png" alt="" class="img-repsonsive"></a>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-                    <a href="#"><img src="images/logo_03.png" alt="" class="img-repsonsive"></a>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-                    <a href="#"><img src="images/logo_04.png" alt="" class="img-repsonsive"></a>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-                    <a href="#"><img src="images/logo_05.png" alt="" class="img-repsonsive"></a>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-                    <a href="#"><img src="images/logo_06.png" alt="" class="img-repsonsive"></a>
-                </div>
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </div><!-- end section -->
-
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -325,8 +296,7 @@ Etablissement habilité à percevoir la taxe d'apprentissage</p>
                             <h3>LIENS RAPIDES</h3>
                         </div>
                         <ul class="footer-links">
-                            <li><a href="http://www.lyceerobertschuman.com/contact/">Contact</a></li>
-                            <li><a href="http://www.lyceerobertschuman.com/acces/">Accès</a></li>
+
                             <li><a href="https://0931573e.index-education.net/pronote">Espace Pronote</a></li>
 							<li><a href="https://youtu.be/5fQu2KygRL0">Vidéo Etablissement</a></li>
 							<li><a href="https://www.facebook.com/robertschumandugny">Facebook</a></li>
