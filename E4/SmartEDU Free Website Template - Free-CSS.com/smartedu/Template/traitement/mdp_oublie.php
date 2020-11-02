@@ -19,7 +19,7 @@ $mail = new PHPMailer();
 
   $mail->setFrom('theoverif@gmail.com', 'Inscription');
   $mail->addAddress($_POST[email], 'Inscription réussie');     // Add a recipient //Recipients
-   $mail->Body    =   'l ecole, merci de nous faire confiance';
+   $mail->Body  =  'réinitialiser votre mot de passe: http://localhost/GIT/E4-theo-adam/E4/SmartEDU%20Free%20Website%20Template%20-%20Free-CSS.com/smartedu/Template/form_rei.php ';
   if(!$mail->Send()) {
     // Si l'envoie de mail ne s'excuté pas alors on affiche une erreur //
     echo '<body onLoad="alert(\'Erreur, mail non envoyé\')">';

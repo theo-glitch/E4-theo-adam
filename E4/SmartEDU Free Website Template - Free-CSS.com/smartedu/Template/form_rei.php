@@ -1,21 +1,25 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="style.css">
 <head>
-	<title>Confirmation mot de passe oublié</title> <!--on nomme le titre de la page-->
+	<title>réinitialisation du mot de passe </title> <!--on nomme le titre de la page-->
 	<meta charset="UTF-8"> <!--On encode en utf-8-->
 
 	<!--On importe les bibliothèques de bootsrap néscéssaires au design dans le vendor, on importe les feuilles css...-->
 </head>
 <body>
-<form method="POST" action="traitement/mdp_oublie.php" class="mdp_oublie"
+<form method="POST" action="form_connexion" class="mdp_oublie"
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
 				<div class="form-group">
 						<input type="text" class="form-input" name="email"  placeholder="Email"/>
+				</div>
+        <div class="form-group">
+						<input type="text" class="form-input" name="MDP"  placeholder="nouveau mot de passe"/>
+				</div>
+        <div class="form-group">
+						<input type="text" class="form-input" name="MDP1"  placeholder="Confirmer nouveau mot de passe"/>
 				</div>
 				</div>
 
@@ -29,7 +33,7 @@
 
 					</div>
 						<center><button class="Recov_mail" >
-							<a href="form_connexion.php" >Envoyer Mail</a>
+							<a href="form_connexion.php" >Confirmer</a>
 						</button></center> <!--On met un bouton dans lequel on met un lien qui retourne vers la page de connexion -->
 			<br>
 			<br>
