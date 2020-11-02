@@ -24,7 +24,7 @@
                     <br><br><br><br>
 
                     <h3>Inscription réussi</h3>
-                    <h3>Un mail de confirmation a été envoyé</h3>
+                    <h3>Vous serez redirigé vers la page de connexion</h3>
                     <br><br><br>
                     <a href="form_connexion.php" class="submit-link submit">Connexion</a>
                     <br><br><br><br>
