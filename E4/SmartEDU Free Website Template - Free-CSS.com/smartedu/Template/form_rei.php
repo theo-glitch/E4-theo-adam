@@ -20,6 +20,8 @@
 				</div>
         <div class="form-group">
 						<input type="text" class="form-input" name="MDP1"  placeholder="Confirmer nouveau mot de passe"/>
+
+
 				</div>
 				</div>
 
@@ -35,7 +37,11 @@
 						<center><button class="Recov_mail" >
 							<a href="form_connexion.php" >Confirmer</a>
 						</button></center> <!--On met un bouton dans lequel on met un lien qui retourne vers la page de connexion -->
-			<br>
+            <?php
+            if ($_POST['MDP']!=$_POST['MDP1'])
+            echo "vos mots de passe ne correspondent pas"
+            ?>
+      <br>
 			<br>
 			<br>
 			</div>
