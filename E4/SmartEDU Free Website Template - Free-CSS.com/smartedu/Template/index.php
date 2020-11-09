@@ -272,7 +272,7 @@
                 <div class="col-lg-4 col-md-4 col-xs-12">
                     <div class="widget clearfix">
                         <div class="widget-title">
-                            <h3>About US</h3>
+                            <h3>A propos de nous</h3>
                         </div>
                         <p> Enseignement catholique sous contrat d'association avec l'Etat<br />
 Etablissement habilité à percevoir la taxe d'apprentissage</p>
