@@ -106,6 +106,6 @@ class Manager_User{
     $bdd = new PDO('mysql:host=localhost;dbname=ecole','root','');
     $req = $bdd->prepare('UPDATE compte SET mdp = ? WHERE email = ?');
     $req->execute(array($modif->getMdp(), $email));
-
+}
 }
 ?>
