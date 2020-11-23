@@ -83,10 +83,9 @@
 							</div>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Blog </a>
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">événements </a>
 							<div class="dropdown-menu" aria-labelledby="dropdown-a">
-								<a class="dropdown-item" href="blog.html">Blog </a>
-								<a class="dropdown-item" href="blog-single.html">Blog single </a>
+								<a class="dropdown-item" href="blog.html">événements</a>
 							</div>
 						</li>
 						<li class="nav-item"><a class="nav-link" href="teachers.html">Professeurs</a></li>
@@ -106,8 +105,8 @@
     									echo "Bienvenue ".$_SESSION['nom'];
     								}
     								else{
-    									echo '<a class="hover-btn-new log" href="form_inscription.php" >Inscription</a>
-    												<a class="hover-btn-new log" href="form_connexion.php" >Connexion</a>';
+    									echo '<a class="hover-btn-new" href="form_inscription.php" >Inscription</a>
+    												<a class="hover-btn-new" href="form_connexion.php" >Connexion</a>';
     								}
     								?><br></div>
     						</div>
