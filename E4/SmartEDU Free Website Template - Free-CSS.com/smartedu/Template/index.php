@@ -105,8 +105,8 @@
     									echo "Bienvenue ".$_SESSION['nom'];
     								}
     								else{
-    									echo '<a class="hover-btn-new log" href="form_inscription.php" >Inscription</a>
-    												<a class="hover-btn-new log" href="form_connexion.php" >Connexion</a>';
+    									echo '<a class="hover-btn-new" href="form_inscription.php" >Inscription</a>
+    												<a class="hover-btn-new" href="form_connexion.php" >Connexion</a>';
     								}
     								?><br></div>
     						</div>
