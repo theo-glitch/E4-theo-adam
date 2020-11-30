@@ -7,6 +7,8 @@ catch (Exception $e){
 }
 
 session_start();
+
+
   if(isset($_POST['ok_modifier_compte'])) {
 
     $author = $_POST['nom'];
@@ -20,7 +22,6 @@ session_start();
       "content" => $content
     ]);
   }
-
  ?>
 
 
@@ -44,7 +45,7 @@ session_start();
  		<div class="wrapper">
  			<div class="inner">
  				<form action="" method="post">
-          <a href="../page_index.php" style="color: #EB2900;" class="genric-btn danger-border circle arrow">Retour<span
+          <a href="index.php" style="color: #EB2900;" class="genric-btn danger-border circle arrow">Retour<span
               class="lnr lnr-arrow-right"></span></a><br><br>
  					<h3>Communiquez ici !</h3>
  					<p>Monsieur <strong><?= $_SESSION['nom']; ?></strong>, voici quelques règles à respecter : </p>
@@ -52,32 +53,31 @@ session_start();
           <p> 🕵 Les messages sont visibles par les administrateurs. </p>
           <p> 👮 Tout manquement aux règles entrainera des sanctions. </p>
  					<label class="form-group">
-            <span>Nom: </span>
- 						<input type="text" text-indent: -10000em; name="nom" class="form-control" value="<?= $_SESSION['nom']; ?>"disabled="disabled" >
+             						<span>Nom: </span>
+ 						<input type="text" text-indent: -10000em; name="nom" class="form-control" value="<?= $_SESSION['nom']; ?>" >
 
  						<span class="border"></span>
 
  					</label>
-<br>
-<br>
-<div class="row">
-<div class="col-25">
-<label for="subject">Subject</label>
-</div>
-<div class="col-75">
-<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-</div>
-</div>
-<div class="row">
-<input type="submit" value="Submit">
-</div>
-</form>
-</div>
-</div>
-</div>
 
-        <br><br>
+          <div class="row">
+              <div class="col-25">
+                <label for="subject">Message: </label>
+              </div>
+              <div class="col-75">
+                <textarea id="subject" name="message" placeholder="Ecrivez votre message.." style="height:100px"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <input type="submit" name="ok_modifier_compte" value="Submit">
+            </div>
+            </form>
+          </div>
+<br>
+<br>
+
 <div class="affichage">
+  <div class="scroller">
 <?php
 $allmsg = $bdd->query('SELECT * FROM minichat ORDER BY id DESC');
 while ($msg = $allmsg->fetch()){
@@ -88,8 +88,10 @@ while ($msg = $allmsg->fetch()){
 <?php
 }
 ?>
-
-
 </div>
+</div>
+ 			</div>
+ 		</div>
+
  	</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
  </html>
