@@ -90,7 +90,6 @@
 						</li>
 						<li class="nav-item"><a class="nav-link" href="teachers.html">Professeurs</a></li>
 
-						<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
           </div>
 					</ul>
           <div id="header">
@@ -105,17 +104,18 @@
     									echo "Bienvenue ".$_SESSION['nom'];
     								}
     								else{
-    									echo '<a class="hover-btn-new" href="form_inscription.php" >Inscription</a>
-    												<a class="hover-btn-new" href="form_connexion.php" >Connexion</a>';
+    									echo '<li class="nav-item"><a class="nav-link" href="form_inscription.php">Inscription</a></li>
+    												<li class="nav-item"><a class="nav-link" href="form_connexion.php">Connexion</a></li>';
     								}
-    								?><br></div>
+    								?></div>
     						</div>
 
                 <?php
     							//affichage des boutons si connecté ou non
     							if(isset($_SESSION['nom']) && !isset($_SESSION['role'])){
     								echo '	<ul class="navbar-nav ml-auto">
-            						<li class="nav-item active"><a class="nav-link" href="compte.php">Mon Profil</a></li>
+            						<li class="nav-item"><a class="nav-link" href="compte.php">Mon Profil</a></li>
+                        	<li class="nav-item"><a class="nav-link" href="minichat.php">Minichat</a></li>
                         ';
     							}
     						else if(isset($_SESSION['nom']) && isset($_SESSION['role'])){
@@ -123,7 +123,7 @@
     							}
     							if(isset($_SESSION['nom'])){
     								echo '
-            						<li class="nav-item active"><a class="nav-link" href="traitement/deconnexion.php">Deconnexion</a></li>
+            						<li class="nav-item"><a class="nav-link" href="traitement/deconnexion.php">Deconnexion</a></li>
                         </ul>';}
     						?>
     					</ul>
