@@ -37,7 +37,7 @@ session_start();
  		<link rel="stylesheet" href="../fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
 
  		<!-- STYLE CSS -->
- 		<link rel="stylesheet" href="../css/style3.css">
+ 		<link rel="stylesheet" href="style.css">
  	</head>
 
  	<body>
@@ -45,7 +45,7 @@ session_start();
  		<div class="wrapper">
  			<div class="inner">
  				<form action="" method="post">
-          <a href="../page_index.php" style="color: #EB2900;" class="genric-btn danger-border circle arrow">Retour<span
+          <a href="index.php" style="color: #EB2900;" class="genric-btn danger-border circle arrow">Retour<span
               class="lnr lnr-arrow-right"></span></a><br><br>
  					<h3>Communiquez ici !</h3>
  					<p>Monsieur <strong><?= $_SESSION['nom']; ?></strong>, voici quelques règles à respecter : </p>
@@ -53,26 +53,31 @@ session_start();
           <p> 🕵 Les messages sont visibles par les administrateurs. </p>
           <p> 👮 Tout manquement aux règles entrainera des sanctions. </p>
  					<label class="form-group">
+             						<span>Nom: </span>
  						<input type="text" text-indent: -10000em; name="nom" class="form-control" value="<?= $_SESSION['nom']; ?>" >
- 						<span>Nom</span>
+
  						<span class="border"></span>
 
  					</label>
 
-          <label class="form-group">
- 						<input type="text" name="message" class="form-control" value="" required>
-<span>Message</span>
- 						<span class="border"></span>
- 					</label>
+          <div class="row">
+              <div class="col-25">
+                <label for="subject">Message: </label>
+              </div>
+              <div class="col-75">
+                <textarea id="subject" name="message" placeholder="Ecrivez votre message.." style="height:100px"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <input type="submit" name="ok_modifier_compte" value="Submit">
+            </div>
+            </form>
+          </div>
+<br>
+<br>
 
- 				<center>
-
-        	<button type="submit" name="ok_modifier_compte">Envoyer
-</center>
- 					</button>
- 				</form>
-        <br><br>
-
+<div class="affichage">
+  <div class="scroller">
 <?php
 $allmsg = $bdd->query('SELECT * FROM minichat ORDER BY id DESC');
 while ($msg = $allmsg->fetch()){
@@ -83,7 +88,8 @@ while ($msg = $allmsg->fetch()){
 <?php
 }
 ?>
-
+</div>
+</div>
  			</div>
  		</div>
 
