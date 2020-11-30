@@ -715,7 +715,7 @@ a img.aligncenter {
 
 .box-slider .carousel-control-prev{
 	border-radius: 2px;
-	background: #1d4b96;
+	background: #eea412;
 	position: absolute;
 	left: 0px;
 	font-size: 38px;
@@ -727,7 +727,7 @@ a img.aligncenter {
 }
 .box-slider .carousel-control-next{
 	border-radius: 2px;
-	background: #1d4b96;
+	background: #eea412;
 	position: absolute;
 	right: 0px;
 	font-size: 38px;
@@ -765,7 +765,7 @@ a img.aligncenter {
 }
 
 .big-tagline a.hover-btn-new:hover span {
-  color: #1d4b96;
+  color: #eea412;
 }
 
 .hover-btn-new::before {
@@ -776,7 +776,7 @@ a img.aligncenter {
 }
 
 .hover-btn-new::after {
-  background: #1d4b96 !important;
+  background: #eea412 !important;
   height: 100%;
   left: 0;
   top: 0;
@@ -938,7 +938,7 @@ a img.aligncenter {
 }
 
 .first-section h2 strong{
-	color: #1d4b96;
+	color: #eea412;
 }
 
 .first-section .lead {
