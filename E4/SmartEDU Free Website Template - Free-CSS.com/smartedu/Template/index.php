@@ -105,7 +105,7 @@
     								}
     								else{
     									echo '<li class="nav-item"><a class="nav-link" href="form_inscription.php">Inscription</a></li>
-    												<li class="nav-item"><a class="nav-link" href="form_connexion.php">Connexion</a></li>';
+    												<li class="nav-item"><a class="nav-link" href="connexion.php">Connexion</a></li>';
     								}
     								?></div>
     						</div>

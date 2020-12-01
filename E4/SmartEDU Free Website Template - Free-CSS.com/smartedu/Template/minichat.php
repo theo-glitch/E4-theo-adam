@@ -54,7 +54,7 @@ session_start();
           <p> 👮 Tout manquement aux règles entrainera des sanctions. </p>
  					<label class="form-group">
              						<span>Nom: </span>
- 						<input type="text" text-indent: -10000em; name="nom" class="form-control" value="<?= $_SESSION['nom']; ?>" >
+ 						<input type="text" text-indent: -10000em; name="nom" class="form-control" value="<?= $_SESSION['nom']; ?>" readonly=readonly >
 
  						<span class="border"></span>
 
@@ -65,11 +65,11 @@ session_start();
                 <label for="subject">Message: </label>
               </div>
               <div class="col-75">
-                <textarea id="subject" name="message" placeholder="Ecrivez votre message.." style="height:100px"></textarea>
+                <textarea id="subject" name="message" placeholder="Ecrivez votre message.." style="height:100px  "></textarea>
               </div>
             </div>
             <div class="row">
-              <input type="submit" name="ok_modifier_compte" value="Submit">
+              <input type="submit" name="ok_modifier_compte" value="Envoyer un message">
             </div>
             </form>
           </div>
