@@ -71,7 +71,7 @@ if(isset($_SESSION['erreur_co'])){
 						<span class="txt1">
 							Oublier votre
 						</span>
-						<a class="txt2" href="../Template/reinitialisation.php">
+						<a class="txt2" href="reinitialisation.php">
 							identifiant/Mot de Passe ?
 						</a>
 					</div>
