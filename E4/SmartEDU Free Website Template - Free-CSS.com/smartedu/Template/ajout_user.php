@@ -14,7 +14,7 @@
     <div class="main">
         <div class="container">
             <div class="signup-content">
-                <form method="POST" action="traitement/cible_inscription.php" class="signup-form">
+                <form method="POST" action="index.php" class="signup-form">
                   <br>
                     <h2>Ajout</h2>
                     <div class="form-group">

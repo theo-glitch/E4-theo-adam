@@ -22,45 +22,29 @@
         <div class="container">
           <div class="container-login100">
             <div class="signup-content">
-                <form method="POST" action="traitement/cible_inscription.php" class="signup-form">
+                <form method="POST" action="ajout_user.php" class="signup-form">
                   <br>
                     <h2>Gestion Admin</h2>
 
                     <div class="container-login100-form-btn">
-                      <button class="login100-form-btn" href="form_connexion.php" class="submit-link submit">
+                      <button class="login100-form-btn" href="ajout_user.php" class="submit-link submit">
                       Ajouter Utilisateur
                       </button>
                       </div>
-
+</form>
+<form method="POST" action="modif_user.php" class="signup-form">
                     <div class="container-login100-form-btn">
-                      <button class="login100-form-btn" href="form_connexion.php" class="submit-link submit">
+                      <button class="login100-form-btn" href="modif_user.php" class="submit-link submit">
                       Modifer Utilisateur
                       </button>
                       </div>
-
+</form>
                     <div class="container-login100-form-btn">
                       <button class="login100-form-btn" href="form_connexion.php" class="submit-link submit">
                       Supprimer Utilisateur
                       </button>
                       </div>
 
-                    <div class="container-login100-form-btn">
-                      <button class="login100-form-btn" href="form_connexion.php" class="submit-link submit">
-                      Ajouter Evénements
-                      </button>
-                      </div>
-
-                    <div class="container-login100-form-btn">
-                      <button class="login100-form-btn" href="form_connexion.php" class="submit-link submit">
-                      Modifier Evénements
-                      </button>
-                      </div>
-
-                    <div class="container-login100-form-btn">
-                      <button class="login100-form-btn" href="form_connexion.php" class="submit-link submit">
-                      Supprimer Evénements
-                      </button>
-                    </div>
                 </form>
             </div>
         </div>
