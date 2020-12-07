@@ -107,5 +107,21 @@ class Manager_User{
     $req = $bdd->prepare('UPDATE compte SET mdp = ? WHERE email = ?');
     $req->execute(array($modif->getMdp(), $email));
 }
+public function envoiebdd1(User $inscription){
+  $bdd = new PDO('mysql:host=localhost;dbname=ecole','root','');
+  $req = $bdd->prepare('SELECT * FROM compte WHERE email = :email');
+  $req->execute(array('email'=>$inscription->getEmail()));
+  $donnee = $req->fetch();
+  if($donnee)
+  {
+    $_SESSION['erreur_inscr'] = "L'email est déjà utilisé.";
+    header('Location: ../form_inscription.php');
+  }
+  else{
+    $req = $bdd->prepare('INSERT into compte (nom, prenom, email, mdp) value(?,?,?,?)');
+    $req -> execute(array($inscription->getNom(), $inscription->getPrenom(), $inscription->getEmail(), SHA1($inscription->getMdp())));
+    header('Location: ../confirm_inscription.php');
+  }
+}
 }
 ?>

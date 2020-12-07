@@ -119,7 +119,7 @@
                         ';
     							}
     						else if(isset($_SESSION['nom']) && isset($_SESSION['role'])){
-    								echo '<li class="last"><a href="view/gestion_admin.php">Gestion Admin</a></li>';
+    								echo '<li class="last"><a href="gestion_admin.php">Gestion Admin</a></li>';
     							}
     							if(isset($_SESSION['nom'])){
     								echo '

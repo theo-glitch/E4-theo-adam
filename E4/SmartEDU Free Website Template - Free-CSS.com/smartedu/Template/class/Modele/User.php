@@ -39,6 +39,7 @@ class User{
     $this->_mail = $mail;
   }
 
+
   //getter
   public function getNom(){return $this->_nom;}
   public function getPrenom(){return $this->_prenom;}
