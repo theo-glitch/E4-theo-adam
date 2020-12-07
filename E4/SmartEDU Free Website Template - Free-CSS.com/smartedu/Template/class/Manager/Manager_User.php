@@ -134,5 +134,23 @@ public function envoiebdd1(User $inscription){
     header('Location: ../confirm_inscription.php');
   }
 }
+
+//Ajout dans la bdd
+  public function ajout(User $inscription){
+    $bdd = new PDO('mysql:host=localhost;dbname=ecole','root','');
+    $req = $bdd->prepare('SELECT * FROM compte WHERE email = :email');
+    $req->execute(array('email'=>$inscription->getEmail()));
+    $donnee = $req->fetch();
+    if($donnee)
+    {
+      $_SESSION['erreur_inscr'] = "L'email est déjà utilisé.";
+      header('Location: ../ajout_user.php');
+    }
+    else{
+      $req = $bdd->prepare('INSERT into compte (nom, prenom, email, mdp) value(?,?,?,?)');
+      $req -> execute(array($inscription->getNom(), $inscription->getPrenom(), $inscription->getEmail(), SHA1($inscription->getMdp())));
+      header('Location: ../confirm_ajout.php');
+    }
+  }
 }
 ?>

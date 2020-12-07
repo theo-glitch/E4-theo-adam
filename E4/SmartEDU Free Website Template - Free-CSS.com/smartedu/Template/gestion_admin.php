@@ -47,6 +47,15 @@
                       </div>
 
                 </form>
+
+                <form method="POST" action="index.php" class="signup-form">
+                <div class="container-login100-form-btn">
+                  <button class="login100-form-btn" href="index.php" class="submit-link submit">
+                  Retour à l'accueil
+                  </button>
+                  </div>
+
+            </form>
             </div>
         </div>
       </div>

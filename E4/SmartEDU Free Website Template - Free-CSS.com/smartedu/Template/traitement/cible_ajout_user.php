@@ -6,7 +6,7 @@
   //Vérification du mdp
   if($_POST['mdp'] != $_POST['confirmmdp']){
     $_SESSION['erreur_inscr'] = "Erreur dans le mot de passe.";
-    header('Location: ../form_inscription.php');
+    header('Location: ../ajout_user.php');
   }
   //ajout dans la bdd
   else{
@@ -15,7 +15,7 @@
                     'email'=>$_POST['email'],
                     'mdp'=>$_POST['mdp'],]);
     $inscrit = new Manager_User;
-    $inscrit->envoiebdd1($inscription);
+    $inscrit->ajout($inscription);
   }
 
 ?>

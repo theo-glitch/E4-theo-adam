@@ -119,7 +119,7 @@
                         	<li class="nav-item"><a class="nav-link" href="minichat.php">Minichat</a></li>
                         ';
     							}
-    						else if(isset($_SESSION['nom']) && isset($_SESSION['role']) && ){
+    						else if(isset($_SESSION['nom']) && isset($_SESSION['role']) && $_SESSION['role'] == 'admin'  ){
                   	echo '	<ul class="navbar-nav ml-auto">
     								<li class="nav-item"><a class="nav-link" href="gestion_admin.php">Gestion Admin</a></li>';
     							}
