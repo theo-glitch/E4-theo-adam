@@ -16,8 +16,8 @@
         <h1 class="text-logo"><span class="glyphicon glyphicon-folder-open"></span> Espace Admin <span class="glyphicon glyphicon-folder-open"></span></h1>
         <div class="container admin">
             <div class="row">
-                <a class="btn btn-primary" href="../../index.php"><span class="glyphicon glyphicon-arrow-left"></span> Retour à l'accueil</a>
-                <h1><strong>Liste des élèves </strong></h1> 
+                <a class="btn btn-primary" href="../../gestion_admin.php"><span class="glyphicon glyphicon-arrow-left"></span> Retour à l'accueil</a>
+                <h1><strong>Liste des élèves </strong></h1>
                   <table class="table table-striped table-bordered">
                   <thead>
                     <tr>

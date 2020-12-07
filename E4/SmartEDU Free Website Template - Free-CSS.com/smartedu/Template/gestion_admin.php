@@ -13,7 +13,7 @@
   	<link rel="stylesheet" type="text/css" href="css/main.css">
     <style>
     h2{
-      padding-left: 34px;
+      padding-left: 60px;
     }
     </style>
 </head>
@@ -32,16 +32,17 @@
                       </button>
                       </div>
 </form>
-<form method="POST" action="modif_user.php" class="signup-form">
+                      <form method="POST" action="modif_user.php" class="signup-form">
                     <div class="container-login100-form-btn">
                       <button class="login100-form-btn" href="modif_user.php" class="submit-link submit">
                       Modifer Utilisateur
                       </button>
                       </div>
 </form>
+                    <form method="POST" action="admin\admin\index.php" class="signup-form">
                     <div class="container-login100-form-btn">
-                      <button class="login100-form-btn" href="form_connexion.php" class="submit-link submit">
-                      Supprimer Utilisateur
+                      <button class="login100-form-btn" href="admin\admin\index.php" class="submit-link submit">
+                      Voir/Supprimer Utilisateur
                       </button>
                       </div>
 
