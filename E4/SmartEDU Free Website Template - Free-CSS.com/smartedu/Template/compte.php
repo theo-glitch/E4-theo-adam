@@ -13,6 +13,7 @@ else{
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link rel="stylesheet" href="css/compte.css">
+  <link rel="stylesheet" href="css/compte.css">
 <!--- Include the above in your HEAD tag ---------->
 
 <div class="container emp-profile">
@@ -20,17 +21,13 @@ else{
                 <div class="row">
                     <div class="col-md-4">
                         <div class="profile-img">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52y5aInsxSm31CvHOFHWujqUx_wWTS9iM6s7BAm21oEN_RiGoog" alt=""/>
-                            <div class="file btn btn-lg btn-primary">
-                                Change Photo
-                                <input type="file" name="file"/>
-                            </div>
+                            <img src="images/oui.jpg" alt=""/>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="profile-head">
                                     <h5>
-                                      <div class="field"><?php echo $donnee['nom']."". $donnee['prenom'];?> </div>
+                                      <div class="field"><?php echo $donnee['nom']."<br> <br>". $donnee['prenom'];?> </div>
                                     </h5>
                                     <h6>
                                         Etudiant
@@ -49,11 +46,11 @@ else{
                       </br>
                       </br>
                         <form id="contacts-form" action="traitement/cible_modif.php" method="POST">
-                      <button class="link2">
-                        <span>
-                          <span>Modifier</span>
-                        </span>
-                      </button>
+                          <div class="container-login100-form-btn">
+                						<button class="login100-form-btn">
+                							Modifier
+                						</button>
+                					</div>
                     </div>
                 </div>
                 <div class="row">

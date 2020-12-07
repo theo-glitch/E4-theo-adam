@@ -9,11 +9,11 @@ body{
     background: #fff;
 }
 .profile-img{
-    text-align: center;
+    text-align: bottom;
 }
 .profile-img img{
     width: 70%;
-    height: 30%;
+    height: 130%;
 }
 .profile-img .file {
     position: relative;

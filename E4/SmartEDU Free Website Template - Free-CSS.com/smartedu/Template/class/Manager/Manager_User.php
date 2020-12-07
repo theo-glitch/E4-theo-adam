@@ -46,7 +46,7 @@ class Manager_User{
     }
     else{
       $_SESSION['erreur_co'] = true;
-      header('location: ../form_connexion.php');
+      header('location: ../connexion.php');
     }
   }
 
