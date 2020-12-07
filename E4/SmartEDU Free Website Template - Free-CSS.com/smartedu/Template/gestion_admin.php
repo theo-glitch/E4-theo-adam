@@ -9,35 +9,62 @@
     <link rel="stylesheet" href="../lib/fonts/material-icon/css/material-design-iconic-font.min.css">
     <!-- Main css -->
     <link rel="stylesheet" href="../lib/css/form_style.css">
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+  	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <style>
+    h2{
+      padding-left: 34px;
+    }
+    </style>
 </head>
 <body>
     <div class="main">
         <div class="container">
+          <div class="container-login100">
             <div class="signup-content">
                 <form method="POST" action="traitement/cible_inscription.php" class="signup-form">
                   <br>
                     <h2>Gestion Admin</h2>
-                    <div class="form-group">
-      <a href="ajout_user.php" class="submit-link submit">Ajouter utilisateur</a>
-                    </div>
-                    <div class="form-group">
-      <a href="form_connexion.php" class="submit-link submit">Modifier utilisateur</a>
-                    </div>
-                    <div class="form-group">
-      <a href="form_connexion.php" class="submit-link submit">Supprimer utilisateur</a>
-                    </div>
-                    <div class="form-group">
-      <a href="form_connexion.php" class="submit-link submit">Ajouter Evénements</a>
-                    </div>
-                    <div class="form-group">
-      <a href="form_connexion.php" class="submit-link submit">Modifier Evénements</a>
-                    </div>
-                    <div class="form-group">
-      <a href="form_connexion.php" class="submit-link submit">Supprimer Evénements</a>
+
+                    <div class="container-login100-form-btn">
+                      <button class="login100-form-btn" href="form_connexion.php" class="submit-link submit">
+                      Ajouter Utilisateur
+                      </button>
+                      </div>
+
+                    <div class="container-login100-form-btn">
+                      <button class="login100-form-btn" href="form_connexion.php" class="submit-link submit">
+                      Modifer Utilisateur
+                      </button>
+                      </div>
+
+                    <div class="container-login100-form-btn">
+                      <button class="login100-form-btn" href="form_connexion.php" class="submit-link submit">
+                      Supprimer Utilisateur
+                      </button>
+                      </div>
+
+                    <div class="container-login100-form-btn">
+                      <button class="login100-form-btn" href="form_connexion.php" class="submit-link submit">
+                      Ajouter Evénements
+                      </button>
+                      </div>
+
+                    <div class="container-login100-form-btn">
+                      <button class="login100-form-btn" href="form_connexion.php" class="submit-link submit">
+                      Modifier Evénements
+                      </button>
+                      </div>
+
+                    <div class="container-login100-form-btn">
+                      <button class="login100-form-btn" href="form_connexion.php" class="submit-link submit">
+                      Supprimer Evénements
+                      </button>
                     </div>
                 </form>
             </div>
         </div>
+      </div>
     </div>
     <!-- JS -->
     <script src="../lib/vendor/jquery/jquery.min.js"></script>
