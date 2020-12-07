@@ -11,7 +11,7 @@ if(isset($_SESSION['erreur_co'])){
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Login V1</title>
+	<title>Connexion</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
@@ -53,7 +53,7 @@ if(isset($_SESSION['erreur_co'])){
 						</span>
 					</div>
 
-					<div class="wrap-input100 validate-input" data-validate = "Password is required">
+					<div class="wrap-input100 validate-input" data-validate = "Mot de passe requis">
 						<input class="input100" type="password" name="mdp" placeholder="Mot de passe">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">

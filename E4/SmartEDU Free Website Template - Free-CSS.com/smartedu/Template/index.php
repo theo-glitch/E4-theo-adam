@@ -89,6 +89,7 @@
 							</div>
 						</li>
 						<li class="nav-item"><a class="nav-link" href="teachers.html">Professeurs</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
 
           </div>
 					</ul>
