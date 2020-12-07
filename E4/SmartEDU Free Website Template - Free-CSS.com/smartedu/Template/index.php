@@ -120,7 +120,8 @@
                         ';
     							}
     						else if(isset($_SESSION['nom']) && isset($_SESSION['role'])){
-    								echo '<li class="last"><a href="gestion_admin.php">Gestion Admin</a></li>';
+                  	echo '	<ul class="navbar-nav ml-auto">
+    								<li class="nav-item"><a class="nav-link" href="gestion_admin.php">Gestion Admin</a></li>';
     							}
     							if(isset($_SESSION['nom'])){
     								echo '
