@@ -21,7 +21,7 @@
       <a href="ajout_user.php" class="submit-link submit">Ajouter utilisateur</a>
                     </div>
                     <div class="form-group">
-      <a href="form_connexion.php" class="submit-link submit">Modifier utilisateur</a>
+      <a href="modif_user.php" class="submit-link submit">Modifier utilisateur</a>
                     </div>
                     <div class="form-group">
       <a href="form_connexion.php" class="submit-link submit">Supprimer utilisateur</a>

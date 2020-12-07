@@ -46,7 +46,7 @@ class Manager_User{
     }
     else{
       $_SESSION['erreur_co'] = true;
-      header('location: ../connexion.php');
+      header('location: ../form_connexion.php');
     }
   }
 
@@ -65,6 +65,17 @@ class Manager_User{
     $bdd = new PDO('mysql:host=localhost;dbname=ecole','root','');
     $req = $bdd->prepare('UPDATE compte SET nom = ?, prenom = ? WHERE email = ?');
     $req->execute(array($modif->getNom(), $modif->getPrenom(), $email));
+    header('location: ../index.php');
+    //actualisation du nom de l'utilisateur dans les pages
+    $req = $bdd->prepare('SELECT nom from compte where email = ?');
+    $req->execute(array($email));
+    $donnee = $req->fetch();
+    $_SESSION['nom'] = $donnee['nom'];
+  }
+  public function modification_admin(User $modif, $email){
+    $bdd = new PDO('mysql:host=localhost;dbname=ecole','root','');
+    $req = $bdd->prepare('UPDATE compte SET nom = ?, prenom = ?, email = ?, mdp = ? WHERE email = ?');
+    $req->execute(array($modif->getNom(), $modif->getPrenom(), $modif->getEmail(), SHA1($modif->getMdp()), $email));
     header('location: ../index.php');
     //actualisation du nom de l'utilisateur dans les pages
     $req = $bdd->prepare('SELECT nom from compte where email = ?');
